@@ -1,0 +1,285 @@
+
+/* GLOBAL STYLES */
+
+:root {
+    --primary-color: #172B3A;
+    --secondary-color: #267C78;
+    --accent-color: #E5B95C;
+    --background-color: #F1F5F4;
+    --surface-color: #FFFFFF;
+    --text-color: #263238;
+    --muted-color: #64748B;
+    --completed-color: #E0F2E9;
+    --border-color: #D7E0DF;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    min-width: 320px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    font: inherit;
+    cursor: pointer;
+}
+
+/* HEADER */
+
+header {
+    background-color: var(--surface-color);
+    padding: 1rem;
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.logo span {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+/* HAMBURGER BUTTON */
+
+#menuButton {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 0.8rem;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+#menuButton:hover {
+    background-color: var(--secondary-color);
+}
+
+#menuButton:focus-visible {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 3px;
+}
+
+/* NAVIGATION */
+
+.navigation {
+    display: none;
+    flex-direction: column;
+    background-color: var(--primary-color);
+}
+
+.navigation.open {
+    display: flex;
+}
+
+.navigation a {
+    color: white;
+    padding: 0.9rem 1rem;
+    text-align: center;
+    transition: background-color 0.2s ease;
+}
+
+.navigation a:hover {
+    background-color: var(--secondary-color);
+}
+
+.navigation a.active {
+    background-color: var(--secondary-color);
+    font-weight: 700;
+}
+
+.navigation a:focus-visible {
+    outline: 3px solid var(--accent-color);
+    outline-offset: -3px;
+}
+
+/* MAIN CONTENT */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+h2 {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 0.65rem;
+    font-size: 1.1rem;
+}
+
+/* ABOUT AND PHOTO */
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.about-section,
+.student-section,
+.certificate-section {
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.about-section p {
+    padding: 1rem;
+}
+
+.student-section img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: contain;
+    padding: 1rem;
+}
+
+/* CERTIFICATE COURSES */
+
+.certificate-section {
+    margin-top: 1rem;
+}
+
+.course-filters {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.course-filters button {
+    background-color: #E3EAE9;
+    color: var(--primary-color);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 0.7rem 0.3rem;
+    font-weight: 700;
+    transition: background-color 0.2s ease;
+}
+
+.course-filters button:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.course-filters button:focus-visible {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
+.course-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    padding: 0 1rem 1rem;
+}
+
+.course-card {
+    background-color: #E3EAE9;
+    color: var(--primary-color);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 0.8rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.course-card.completed {
+    background-color: var(--completed-color);
+    border: 2px solid var(--secondary-color);
+    font-weight: 700;
+}
+
+.credit-total {
+    text-align: center;
+    padding: 0 1rem 1rem;
+    font-size: 0.9rem;
+    color: var(--muted-color);
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 1rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.social-links img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.social-links a:hover {
+    opacity: 0.7;
+}
+
+footer p {
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+}
+
+#lastModified {
+    font-size: 0.8rem;
+    color: #D1E2E0;
+}
+
+/* ACCESSIBILITY */
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 3px;
+}
