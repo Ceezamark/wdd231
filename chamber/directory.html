@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,121 @@
         content="Explore the Chamber of Commerce directory to discover local businesses and community services.">
     <meta name="author" content="Chineme Ndu-Okoronkwo">
     <title>Chamber Directory | WDD231</title>
+    <meta property="og:title" content="Chamber Directory | WDD231">
+    <meta property="og:description"
+        content="Explore the Chamber of Commerce directory to discover local businesses and community services.">
+    <meta property="og:image" content="https://ceezamark.github.io/wdd231/images/logo.svg">
+    <meta property="og:url" content="https://ceezamark.github.io/wdd231/chamber/directory.html">
+
+    <!-- Favicons -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- CSS files -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/directory.js" defer></script>
 </head>
+
 <body>
-    
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-content">
+
+            <a href="index.html" class="logo">
+                <img src="images/logo.svg" class="logo-icon" alt="Owerri Chamber of Commerce Logo" width="50" height="50">
+                <span>Owerri Chamber of Commerce</span>
+            </a>
+
+            <button id="menu-button" aria-label="Open navigation menu">
+                ☰
+            </button>
+
+            <nav id="navigation">
+                <a href="index.html">Home</a>
+                <a href="directory.html" class="active">Directory</a>
+                <a href="join.html">Join</a>
+                <a href="discover.html">Discover</a>
+            </nav>
+
+            <button id="theme-button" aria-label="Toggle dark mode">
+                ◐
+            </button>
+        </div>
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <h1>Business Directory</h1>
+
+        <section class="directory-section">
+
+            <div class="view-buttons">
+                <button id="grid-button" class="active" aria-pressed="true">
+                    Grid
+                </button>
+
+                <button id="list-button" aria-pressed="false">
+                    List
+                </button>
+            </div>
+
+            <!-- Business members will be displayed here using JavaScript -->
+            <div id="members-container" class="members-grid">
+                <p>Loading business members...</p>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-content">
+
+            <!-- Chamber contact information -->
+            <div class="contact-info">
+                <h3>Owerri Chamber of Commerce</h3>
+
+                <p>Owerri, Imo State, Nigeria</p>
+                <p>Email: info@owerrichamber.org</p>
+                <p>Phone: +234 800 000 0000</p>
+            </div>
+
+            <!-- Social media links -->
+            <div class="social-links">
+                <a href="https://www.facebook.com/" aria-label="Facebook">
+                    <img src="images/facebook.png" alt="" width="40" height="40">
+                </a>
+                <a href="https://www.linkedin.com/in/chineme-mark-2679251a6/" aria-label="LinkedIn">
+                    <img src="images/linkedin.png" alt="" width="40" height="40">
+                </a>
+                <a href="https://www.youtube.com/" aria-label="YouTube">
+                    <img src="images/youtube.png" alt="" width="40" height="40">
+                </a>
+            </div>
+
+            <!-- Development information -->
+            <div class="development-info">
+                <p>WDD 231 Class Project</p>
+                <p>Chineme Ndu-Okoronkwo</p>
+
+                <p>
+                    &copy; <span id="current-year"></span>
+                    Owerri Chamber of Commerce
+                </p>
+
+                <p>
+                    Last Modification:
+                    <span id="last-modified"></span>
+                </p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,104 @@
+@media screen and (min-width: 640px) {
+
+    /* HEADER */
+
+    #menu-button {
+        display: none;
+    }
+
+    .header-content {
+        flex-wrap: nowrap;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        width: auto;
+        margin-left: auto;
+    }
+
+    nav a {
+        border: none;
+        padding: 0.7rem 1rem;
+    }
+
+    /* DIRECTORY GRID */
+
+    .members-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* MEMBER DETAILS */
+
+    .member-details {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .member-details img {
+        flex-shrink: 0;
+        width: 110px;
+        height: 100px;
+    }
+
+    /* LIST VIEW */
+
+    .members-list .member-details {
+        display: block;
+    }
+
+    /* FOOTER */
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+    }
+
+    .social-links {
+        grid-column: 1 / -1;
+        justify-content: center;
+    }
+}
+
+
+@media screen and (min-width: 900px) {
+
+    main {
+        padding: 2rem 1.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    /* THREE-COLUMN BUSINESS GRID */
+
+    .members-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .member-card h2 {
+        font-size: 1.25rem;
+    }
+
+    .member-details img {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* FOOTER */
+
+    .footer-content {
+        grid-template-columns: 1.2fr 1fr 1.2fr;
+        align-items: start;
+    }
+
+    .social-links {
+        grid-column: auto;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Eastern Digital Solutions",
+        "tagline": "Technology for a Better Future",
+        "email": "info@easterndigital.com",
+        "address": "Wetheral Road, Owerri, Imo State",
+        "phone": "+2348012345678",
+        "website": "https://example.com",
+        "image": "eastern-digital.png",
+        "membership": 3
+    },
+    {
+        "name": "Imo Royal Hotels",
+        "tagline": "Experience Comfort and Luxury",
+        "email": "info@imoroyal.com",
+        "address": "New Owerri, Imo State",
+        "phone": "+2348023456789",
+        "website": "https://example.com",
+        "image": "imo-royal-hotels.png",
+        "membership": 2
+    },
+    {
+        "name": "De Prince Supermarket",
+        "tagline": "Everything You Need in One Place",
+        "email": "contact@deprince.com",
+        "address": "Douglas Road, Owerri, Imo State",
+        "phone": "+2348034567890",
+        "website": "https://example.com",
+        "image": "supermarket.png",
+        "membership": 1
+    },
+    {
+        "name": "Greenfield Farms",
+        "tagline": "Growing a Sustainable Future",
+        "email": "info@greenfield.com",
+        "address": "Orji, Owerri, Imo State",
+        "phone": "+2348045678901",
+        "website": "https://example.com",
+        "image": "farm.png",
+        "membership": 2
+    },
+    {
+        "name": "Classic Fashion House",
+        "tagline": "Style That Defines You",
+        "email": "hello@classicfashion.com",
+        "address": "Aladinma, Owerri, Imo State",
+        "phone": "+2348056789012",
+        "website": "https://example.com",
+        "image": "fashion.png",
+        "membership": 1
+    },
+    {
+        "name": "Prime Medical Centre",
+        "tagline": "Your Health Is Our Priority",
+        "email": "info@primemedical.com",
+        "address": "Ikenegbu, Owerri, Imo State",
+        "phone": "+2348067890123",
+        "website": "https://example.com",
+        "image": "medical.png",
+        "membership": 3
+    },
+    {
+        "name": "Excel Business Consult",
+        "tagline": "Building Businesses That Last",
+        "email": "contact@excelconsult.com",
+        "address": "World Bank Road, Owerri, Imo State",
+        "phone": "+2348078901234",
+        "website": "https://example.com",
+        "image": "business.png",
+        "membership": 2
+    }
+]
