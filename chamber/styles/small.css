@@ -13,8 +13,13 @@
 /* GENERAL STYLES */
 
 body {
+    font-family: "Roboto", Arial, sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
+}
+
+button {
+    font-family: inherit;
 }
 
 a {
